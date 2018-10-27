@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Branislav Milosevic CV</title>
+	<title>Branislav Milosevic | FrontEnd Developer</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/fancybox.css">
-
-	<script src="js/jquery-1.6.min.js" type="text/javascript"></script>
-    <script src="js/custom.js" type="text/javascript"></script>
-    <script src="js/jquery.isotope.min.js" type="text/javascript"></script>
-    <script src="js/jquery.adipoli.min.js" type="text/javascript"></script>
-    <script src="js/jquery.fancybox.js" type="text/javascript"></script>
-
 
 
 </head>
@@ -23,18 +15,18 @@
 	<!--NAVIGATION -->
 	<div class="leviMeni nav">
 		<ul>
-			<li><a class="active" href="index.html#home"> <span> <i class="fas fa-home"></i> </span> <span>HOME</span> </a></li>
-			<li><a href="index.html#about"> <span> <i class="fas fa-user"></i> </span> <span>ABOUT</span> </a></li>
-			<li><a href="index.html#resume"> <span> <i class="fas fa-address-card"></i> </span> <span>RESUME</span> </a></li>
-			<li><a href="index.html#works"> <span> <i class="fas fa-desktop"></i> </span> <span>WORKS</span> </a></li>
-			<li><a href="index.html#contact"> <span> <i class="fas fa-comments"></i> </span> <span>CONTACT</span> </a></li>
+			<li><a class="active" href="#home"> <span> <i class="fas fa-home"></i> </span> <span>HOME</span> </a></li>
+			<li><a href="#about"> <span> <i class="fas fa-user"></i> </span> <span>ABOUT</span> </a></li>
+			<li><a href="#resume"> <span> <i class="fas fa-address-card"></i> </span> <span>RESUME</span> </a></li>
+			<li><a href="#works"> <span> <i class="fas fa-desktop"></i> </span> <span>WORKS</span> </a></li>
+			<li><a href="#contact"> <span> <i class="fas fa-comments"></i> </span> <span>CONTACT</span> </a></li>
 		</ul>
 		
 	</div>
  
 	<div class="desniMeni nav">
 		<ul>
-			<li><a class="active" href="https://www.facebook.com/branimil" target="_blank"> <span> <i class="fab fa-facebook"></i> </span> <span>FACEBOOK</span> </a></li>
+			<li><a href="https://www.facebook.com/branimil" target="_blank"> <span> <i class="fab fa-facebook"></i> </span> <span>FACEBOOK</span> </a></li>
 			<li><a href="https://www.instagram.com/bran_mil/?hl=sr" target="_blank"> <span> <i class="fab fa-instagram"></i> </span> <span>INSTAGRAM</span> </a></li>
 			<li><a href=""target="_blank"> <span> <i class="fab fa-linkedin"></i> </span> <span>LINKEDIN</span> </a></li>
 			<li><a href="https://codepen.io/Banex91/" target="_blank"> <span> <i class="fab fa-codepen"></i> </span> <span>CODEPEN</span> </a></li>
@@ -46,17 +38,17 @@
 	<!--START CONTAINER -->
 	<div class="container">
 
-		<div id="home">
+		<div class="navscrool" id="home">
 
 			<div class="home-section"> <img src="image/profil.png"></div>
 
 			<h1>BRANISLAV MILOSEVIC</h1>
-			<h3>FrontEnd Developer</h3>
-			<a href="index.html#about""><i class="fas fa-angle-down"></i></a>
+			<h2>FrontEnd Developer</h2>
+			<a href="#about""><i class="fas fa-angle-down"></i></a>
 
 		</div> <!--END HOME -->
 
-		<div id="about">
+		<div class="navscrool" id="about">
 			<div class="inner-section">
 				<h3>HELLO WORLD</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem accusamus explicabo, ducimus nam sit officiis omnis cumque at non fugit fuga repellat, eos.</p>
@@ -69,7 +61,7 @@
 				</div>
 
 				<div class="inner-small">
-					<a href="index.html#contact"> <i class="fas fa-envelope"></i> Contact Me</a>
+					<a href="#contact"> <i class="fas fa-envelope"></i> Contact Me</a>
 				</div>
 
 
@@ -90,7 +82,7 @@
 
 		</div> <!--END ABOUT -->
 
-		<div id="resume">
+		<div class="navscrool" id="resume">
 
 			<div class="inner-section">
 				<h3>EDUCATION</h3>
@@ -171,7 +163,7 @@
 
 		</div> <!--END RESUME -->
 
-		<div id="works">
+		<div class="navscrool" id="works">
 			<div class="section">
 				<h3>PORTFOLIO</h3>
 			</div>
@@ -182,7 +174,7 @@
                     <li><a href="#" class="current" data-filter="*">All</a></li>
                     <li><a href="#" data-filter=".wordpress">WordPress</a></li>
                     <li><a href="#" data-filter=".htmlcss">HTML/CSS</a></li>
-                    <li><a href="#" data-filter=".illustration">Illustration</a></li>
+                    <li><a href="#" data-filter=".ilustration">Illustration</a></li>
                     <li><a href="#" data-filter=".logo">Logo Design</a></li>
                     <li><a href="#" data-filter=".graphic">Graphic Design</a></li>
                 </ul>
@@ -202,16 +194,54 @@
                                 <h5>Hello Earth</h5>
                             </a>
                     	</li>
+
+                    	<li class="ilustration">
+                            <a href="image/1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque" rel="portfolio" class="folio">
+                                <img src="image/1-thumb.jpg" alt="">
+                                <h5>Hello Earth</h5>
+                            </a>
+                    	</li>
+
+                    	<li class="htmlcss">
+                            <a href="image/1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque" rel="portfolio" class="folio">
+                                <img src="image/1-thumb.jpg" alt="">
+                                <h5>Hello Earth</h5>
+                            </a>
+                    	</li>
+
+                    	<li class="ilustration">
+                            <a href="image/1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque" rel="portfolio" class="folio">
+                                <img src="image/1-thumb.jpg" alt="">
+                                <h5>Hello Earth</h5>
+                            </a>
+                    	</li>
+
+                    	<li class="wordpress">
+                            <a href="image/1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque" rel="portfolio" class="folio">
+                                <img src="image/1-thumb.jpg" alt="">
+                                <h5>Hello Earth</h5>
+                            </a>
+                    	</li>
+
+                    	<li class="logo">
+                            <a href="image/1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque" rel="portfolio" class="folio">
+                                <img src="image/1-thumb.jpg" alt="">
+                                <h5>Hello Earth</h5>
+                            </a>
+                    	</li>
+
                 </ul>
 
 			</div>
 
 		</div> <!--END WORKS -->
 
-		<div id="contact">
+		<div class="navscrool" id="contact">
 			<section class="get-in-touch">
 				<div class="section">
 			   		<h3>Get in touch</h3>
+
+			   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum reiciendis magnam, facere dolore harum, quod modi voluptas beatae iusto tempora, ut!</p>
 				</div>
 			   <form class="contact-form row">
 			      <div class="form-field col x-50">
@@ -231,9 +261,12 @@
 			      </div>
 			   </form>
 			</section>
-			<p class="note">Design by <a class="link" href="" target="blank">Branislav Milosevic</a> | 2018</p>
-
 		</div> <!--END CONTACT -->
+		<div class="note">
+			   	<a href="#home""><i class="fas fa-angle-up"></i></a> 
+				<span>BACK TO TOP</span>
+				<p>Design by Branislav Milosevic</p>
+		</div>
 		
 	</div>
 	 
@@ -242,23 +275,13 @@
 
 
 </body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-    $(function() {
-      // Smooth Scrolling
-      $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html, body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-</script>
-
+	
+	<script src="js/jquery-1.6.min.js" type="text/javascript"></script>
+	
+	
+	<script src="js/custom.js" type="text/javascript"></script>
+    <script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+    <script src="js/jquery.adipoli.min.js" type="text/javascript"></script>
+    <script src="js/jquery.fancybox.js" type="text/javascript"></script>
+    <script src="js/menu.js" type="text/javascript"></script>
 </html>

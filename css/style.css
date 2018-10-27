@@ -13,12 +13,8 @@ body {
 	margin: 0px auto;
 	padding: 0px 20px;
 	position: relative;
-	margin-top: -30px;
 }
 
-.special-text {
-	color:#fb6f1d;
-}
 
 /*NAVIGATION */
 
@@ -55,7 +51,7 @@ body {
 
 .nav ul li a {
 	text-decoration: none;
-	color: #c5a364;
+	color: #888;
 	display: block;
 	background: rgba(0, 0, 0, 0.5);;
 	padding: 15px;
@@ -121,23 +117,22 @@ body {
 	margin: 0px auto;
 }
 
-#home, #about, #resume, #works, #contact {
-	min-height: 500px;
-	padding: 50px 0px;
+.navscrool {
+	min-height: 80vh;
+	margin-top: 30px;
 }
 
 #home {
 	text-align: center;
-
 }
 
 #home a i {
 	font-size: 35px;
 	margin-top: 50px;
-	color: #ffa500;
+	color: #fb6f1d;
 }
 
-p,h1,h3, h4, h5 {
+p,h1,h2,h3,h4,h5,a {
 	color:white;
 }
 .home-section img {
@@ -147,7 +142,7 @@ p,h1,h3, h4, h5 {
 
 .home-section:after {
 	content: "";
-    border: 3px solid #ffa500;
+    border: 3px solid #fb6f1d;
     width: 50px;
     display: block;
     margin: 10px auto;
@@ -155,29 +150,39 @@ p,h1,h3, h4, h5 {
 
 .home-section:before {
 	content: "";
-    border: 3px solid #ffa500;
+    border: 3px solid #fb6f1d;
     width: 50px;
     display: block;
     margin: 10px auto;
 }
 
+#home h1 {
+	font-size: 45px!important;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+#home h2 {
+	color:#888;
+	margin-top: 5px;
+}
 
 /* inner section UNUTRASNJE SEKCIJE */
 
 .section {
-	padding: 10px;
+	padding: 30px 10px 10px;
 }
 
 
 .inner-section {
-	padding: 10px;
+	padding: 30px 10px;
 	width: 340px;
 	float: left;
 	margin-right: 10px;
 }
 
 
-.inner-section h3, .section h3 {
+.navscrool h3 {
 	padding: 10px;
 	background: #fb6f1d;
 	text-align: center;
@@ -322,6 +327,7 @@ p,h1,h3, h4, h5 {
 
 	.portfolio {
 	padding: 0px 10px;
+	margin-bottom: 100px;
 	}
 
 	#portfolio-filter {
@@ -368,7 +374,7 @@ p,h1,h3, h4, h5 {
 		text-decoration: none;
 	}
 	.isotope {
-		margin-left: -30px;
+		margin:0px auto;
 	}
 
 	#portfolio-list li:hover {
@@ -444,6 +450,7 @@ p,h1,h3, h4, h5 {
 }
 .row .col.x-100 {
   width: 100%;
+  text-align: center;
 }
 
 .content-wrapper {
@@ -508,27 +515,106 @@ p,h1,h3, h4, h5 {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
-  padding: 8px 16px;
+  padding: 15px 50px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .note {
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  width: 100%;
   text-align: center;
   font-size: 16px;
-  line-height: 21px;
 }
-.note .link {
-  color: #888;
-  text-decoration: none;
+
+.note span {
+	color: #fff;
+	display: block;
+	margin-bottom: 40px;
 }
-.note .link:hover {
-  text-decoration: underline;
+
+.note a i {
+    font-size: 35px;
+    margin-top: 50px;
+    color: #fb6f1d;}
+
+
+/***FANCY BOX CSS****/
+
+#fancybox-loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	margin-left: -20px;
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 1104;
+	display: none;
+}
+
+#fancybox-loading div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 480px;
+}
+
+#fancybox-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1100;
+	display: none;
+}
+
+#fancybox-tmp {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	overflow: auto;
+	display: none;
+}
+
+#fancybox-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	z-index: 1101;
+	outline: none;
+	display: none;
+}
+
+#fancybox-outer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+#fancybox-content {
+	width: 0;
+	height: 0;
+	padding: 0;
+	outline: none;
+	position: relative;
+	overflow: hidden;
+	z-index: 1102;
+	border: 0px solid #fff;
+}
+
+#fancybox-hide-sel-frame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	z-index: 1101;
 }
