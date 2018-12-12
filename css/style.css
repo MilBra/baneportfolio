@@ -5,7 +5,6 @@ body {
 	background-image: url(../image/texture.png);
 	background-color: #666;
 	background-repeat: repeat;
-
 }
 
 .main {
@@ -17,7 +16,9 @@ body {
 
 .special-text {color:#888888;
 text-decoration: none;}
-
+.special-text:hover {
+  color: #fb6f1d;
+}
 
 /*NAVIGATION */
 
@@ -374,13 +375,16 @@ p,h1,h2,h3,h4,h5,a {
 	
 	.work {
    display: inline-block;
-	 margin: 0px 10px 10px 0px;
+	 margin: 0px 9px 9px 0px;
 	 position: relative;
 	}
-
-  .work:nth-of-type(3),.work:nth-of-type(6),.work:nth-of-type(9),.work:nth-of-type(12) {
+/*
+  .work:nth-of-type(3),.work:nth-of-type(6),.work:nth-of-type(9),
+  .work:nth-of-type(12),.work:nth-of-type(15),.work:nth-of-type(18),
+  .work:nth-of-type(21),.work:nth-of-type(24),.work:nth-of-type(27) {
     margin-right: 0px;
   }
+  */
 
   /******efect FIGURE******/
 
@@ -440,7 +444,6 @@ figure h2 { margin: 0;}
   border-radius: 5px;}
 
 figure.effect-julia img {
-  max-width: none;
   height: 200px;
   -webkit-transition: opacity 1s, -webkit-transform 1s;
   transition: opacity 1s, transform 1s;
