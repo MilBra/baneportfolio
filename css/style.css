@@ -344,6 +344,7 @@ p,h1,h2,h3,h4,h5,a {
 
 	#portfolio-filter {
 		overflow:hidden;
+    padding-left: 0px;
 	}
 	
 	#portfolio-filter li {
@@ -666,23 +667,25 @@ figure.effect-julia:hover p {
 
   /*navigation*/
   #mobile_Left_Menu {
+    margin-top: 10px;
     display: block;
-    width: 90px;
+    width: 100px;
     background: #fb6f1d;
     color: white;
     font-size: 35px;
     text-align: center;
-    line-height: 70px;
+    line-height: 100px;
     position: fixed;}
 
   #mobile_Right_Menu {
+    margin-top: 10px;
     display: block;
-    width: 90px;
+    width: 100px;
     background: #fb6f1d;
     color: white;
     font-size: 35px;
     text-align: center;
-    line-height: 70px;
+    line-height: 100px;
     position: fixed;
     right: 0px;
     margin-right: 20px; 
@@ -690,12 +693,16 @@ figure.effect-julia:hover p {
   
   .leviMeni, .desniMeni {
     display: none;
+    width: 100px;
+    margin-top: 125px;
+    overflow: scroll;
   }
   
 
   .leviMeni {
     height: auto;
     margin-left: 0px;
+
   }
   .leviMeni ul li a, .desniMeni ul li a {
     border-radius: 0px;
