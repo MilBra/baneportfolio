@@ -2,7 +2,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Poppins', sans-serif;
-	background-image: url(../image/texture.png);
+	background-image: url(../image/cube.png);
 	background-color: #666;
 	background-repeat: repeat;
 }
@@ -21,6 +21,10 @@ text-decoration: none;}
 }
 
 /*NAVIGATION */
+
+#mobile_Left_Menu, #mobile_Right_Menu {
+  display: none;
+}
 
 
 .leviMeni {
@@ -375,10 +379,16 @@ p,h1,h2,h3,h4,h5,a {
 	
 	.work {
    display: inline-block;
-	 margin: 0px 5px 5px 0px;
+	 margin: 0px 9px 9px 0px;
 	 position: relative;
 	}
-
+/*
+  .work:nth-of-type(3),.work:nth-of-type(6),.work:nth-of-type(9),
+  .work:nth-of-type(12),.work:nth-of-type(15),.work:nth-of-type(18),
+  .work:nth-of-type(21),.work:nth-of-type(24),.work:nth-of-type(27) {
+    margin-right: 0px;
+  }
+  */
 
   /******efect FIGURE******/
 
@@ -646,3 +656,79 @@ figure.effect-julia:hover p {
     font-size: 35px;
     margin-top: 50px;
     color: #fb6f1d;}
+
+
+/******RESPONSIVE CODE******/
+
+@media screen and (max-width:767px) {
+
+  .container {width: auto;}
+
+  /*navigation*/
+  #mobile_Left_Menu {
+    display: block;
+    width: 90px;
+    background: #fb6f1d;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    line-height: 70px;
+    position: fixed;}
+
+  #mobile_Right_Menu {
+    display: block;
+    width: 90px;
+    background: #fb6f1d;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    line-height: 70px;
+    position: fixed;
+    right: 0px;
+    margin-right: 20px; 
+  }
+  
+  .leviMeni, .desniMeni {
+    display: none;
+  }
+  
+
+  .leviMeni {
+    height: auto;
+    margin-left: 0px;
+  }
+  .leviMeni ul li a, .desniMeni ul li a {
+    border-radius: 0px;
+  }
+
+  .desniMeni {
+    right: 22px;
+  }
+
+  .navscrool {
+    width: 80%;
+    margin: 80px auto;
+  }
+
+  .inner-section {
+    width: 100%;
+    padding:30px 0px;
+  }
+
+  .p-box {
+    width: 60%;
+  }
+
+  .note {
+    clear: both;
+  }
+
+  /*responsiv portfolio */
+  figure {
+    min-width: 345px;
+    max-width: 345px;}
+
+  figure.effect-julia img {height: 300px;}
+
+}
+
