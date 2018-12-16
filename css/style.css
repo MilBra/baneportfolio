@@ -333,6 +333,12 @@ p,h1,h2,h3,h4,h5,a {
     text-align: center;
 }
 
+.icons-skill {
+  font-size: 36px;
+  color: white;
+}
+.icons-skill i {padding:0px 7px;}
+
 
 
 /****** PORTFOLIO SECTION *******/
@@ -660,6 +666,23 @@ figure.effect-julia:hover p {
 
 
 /******RESPONSIVE CODE******/
+@media screen and (max-width:1024px) {
+  .container {width: 760px;}
+
+  .desniMeni {margin-left: 900px;}
+
+  .leviMeni {margin-left: -10px;}
+
+  .inner-section {width: 355px;}
+
+  figure {
+    min-width: 345px;
+    max-width: 345px;}
+
+  figure.effect-julia img {height: 300px;}
+
+}
+
 
 @media screen and (max-width:767px) {
 
@@ -738,4 +761,5 @@ figure.effect-julia:hover p {
   figure.effect-julia img {height: 300px;}
 
 }
+
 
