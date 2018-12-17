@@ -686,6 +686,8 @@ figure.effect-julia:hover p {
 
 @media screen and (max-width:767px) {
 
+	body {font-size: 1.8rem;}
+
   .container {width: auto;}
 
   /*navigation*/
@@ -746,11 +748,15 @@ figure.effect-julia:hover p {
   }
 
   .p-box {
-    width: 60%;
+    width: 80%;
   }
 
   .note {
     clear: both;
+  }
+
+  .note span {
+  	font-size: 2rem;
   }
 
   /*responsiv portfolio */
