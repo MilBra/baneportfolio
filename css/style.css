@@ -613,6 +613,7 @@ figure.effect-julia:hover p {
   line-height: 26px;
   font-weight: 400;
   background: transparent;
+  color:silver;
 }
 .contact-form .input-text:focus {
   outline: none;
@@ -624,7 +625,7 @@ figure.effect-julia:hover p {
 .contact-form .label {
   position: absolute;
   left: 20px;
-  bottom: 11px;
+  bottom: 30px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
@@ -646,6 +647,10 @@ figure.effect-julia:hover p {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.contact-form .input-text:focus {
+	color:white;
 }
 
 .note {
