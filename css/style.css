@@ -169,6 +169,7 @@ p,h1,h2,h3,h4,h5,a {
 	font-size: 45px!important;
     padding: 0px;
     margin-bottom: 0px;
+    letter-spacing: 3px;
 }
 
 #home h2 {
