@@ -1,7 +1,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 	background-image: url(../image/cube.png);
 	background-color: #666;
 	background-repeat: repeat;
@@ -753,7 +753,7 @@ figure.effect-julia:hover p {
   }
 
   .p-box {
-    width: 80%;
+    width: 99%;
   }
 
   .note {
@@ -770,6 +770,8 @@ figure.effect-julia:hover p {
     max-width: 345px;}
 
   figure.effect-julia img {height: 300px;}
+
+  figure.effect-julia p {font-size: 18px;}
 
 }
 
